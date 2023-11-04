@@ -1,0 +1,53 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.banner {
+    background-color: plum;
+    border: solid;
+    border-color: purple;
+    width: auto;
+    height: 120px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.column {
+    flex: 50%
+}
+
+.row {
+    display: flex;
+}
+
+img {
+    padding: 10px;
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+h2 {
+    text-align: right;
+    padding: 10px;
+}
+
+.booktext {
+    display: inline;
+    text-align: left;
+}
