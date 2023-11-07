@@ -3,7 +3,7 @@ html {
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -22,18 +22,37 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
+    .container {
+        flex-direction: column;
+    }
+    .right-side{
+        flex:none;
     }
 }
 
-.column {
-    flex: 50%
+.container {
+    display: flex;
+}
+
+.leftside {
+    flex: 3;
+    padding: 10px;
+}
+
+.rightside {
+    flex: 1;
+    padding: 10px;
 }
 
 .row {
     display: flex;
 }
+
+.fields {
+    float: right;
+    width: 80% display: inline-block;
+}
+
 
 img {
     padding: 10px;

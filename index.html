@@ -13,41 +13,71 @@
         <h1> Book Inventory</h1>
     </div>
     </br>
-    <div class="row">
 
-        <div class="column">
+
+    <div class="container">
+        <div class="left-side">
             <div class="row">
-            <img src="./images/Alchemist.jpg" alt="alchemist cover">
-            <div class="booktext row">
-                <h3>The Alchemist</h3>
-                <h4><em>Paolo Coelho</h4></em>
-                <p>$20.00</p>
+                <img src="./images/Alchemist.jpg" alt="alchemist cover" id="img">
+                <div class="booktext row">
+                    <h3>The Alchemist</h3>
+                    <h4><em>Paolo Coelho</h4></em>
+                    <p>$20.00</p>
+                </div>
             </div>
-        </div>
 
             <div class="row"><img src="./images/goldfinch.jpg" alt="goldfinch cover">
-            <div class="booktext row">
-                <h3>The Goldfinch</h3>
-                <h4><em>Donna Tartt</h4></em>
-                <p>$20.00</p>
+                <div class="booktext row">
+                    <h3>The Goldfinch</h3>
+                    <h4><em>Donna Tartt</h4></em>
+                    <p>$20.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="./images/kofm.jpg" alt="kofm cover">
+                <div class="booktext row">
+                    <h3>Killers of the Flower Moon</h3>
+                    <h4><em>David Grann</h4></em>
+                    <p>$20.00</p>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <img src="./images/kofm.jpg" alt="kofm cover">
-            <div class="booktext row">
-                <h3>Killers of the Flower Moon</h3>
-                <h4><em>David Grann</h4></em>
-                <p>$20.00</p>
+        <div class="right-side">
+            <div class="fields">
+                <h2>Add New Book</h2>
+                <fieldset>
+                    <br>
+                    <label for="Name">Name</label><br />
+                    <input id="Name" name="title" type="text" required />
+
+                    <br>
+                    <label for="author">Author</label><br />
+                    <input id="author" name="author" type="author" required />
+
+                    <br>
+                    <label for="price">Price ($)</label><br>
+                    <input id="price" name="price" type="number" required />
+
+                    <br>
+                    <label for="amount">Amount</label><br />
+                    <input id="amount" name="amount" type="number" required /><br>
+
+                    <label><br>
+                        <select id="in stock" name="in stock">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        In Stock
+                    </label>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </div>
         </div>
-        </div>
-
-        <div class="column">
-            <h2>Add New Book</h2>
-
-        </div>
-
+    </div>
 
 </body>
 
