@@ -4,17 +4,19 @@ html {
     height: 100%;
     width: 100%;
     overflow: scroll;
+    background-color: #c8a2c8;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
     text-align: center;
+
 }
 
 .banner {
-    background-color: plum;
+    background-color:#A989A6;
     border: solid;
-    border-color: purple;
+    border-color: #5c0029
     width: auto;
     height: 120px;
     margin: 0px auto;
@@ -24,14 +26,29 @@ h1 {
 @media screen and (max-width: 600px) {
     .container {
         flex-direction: column;
+        flex-wrap: wrap;
     }
-    .right-side{
-        flex:none;
+
+    .right-side {
+        flex-wrap: nowrap;
+        flex-align: start;
+
     }
+}
+
+.currentstock {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid black margin-right:10px;
 }
 
 .container {
     display: flex;
+
 }
 
 .leftside {
@@ -50,10 +67,18 @@ h1 {
 
 .fields {
     float: right;
-    width: 80% display: inline-block;
+    width: 80%;
 }
 
+fieldset {
+    border-color: #5c0029;
+}
 
+legend {
+    font-weight: 800;
+    font-size: x-large;
+    text-wrap: nowrap;
+}
 img {
     padding: 10px;
     width: 100px;
@@ -61,10 +86,6 @@ img {
     float: left;
 }
 
-h2 {
-    text-align: right;
-    padding: 10px;
-}
 
 .booktext {
     display: inline;
