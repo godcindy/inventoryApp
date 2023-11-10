@@ -10,17 +10,17 @@ html {
 
 h1 {
     text-align: center;
-
 }
 
 .banner {
-    background-color:#A989A6;
+    background-color: #A989A6;
+    color: whitesmoke;
     border: solid;
-    border-color: #5c0029
-    width: auto;
+    border-color: #5c0029 width: auto;
     height: 120px;
     margin: 0px auto;
     padding: 0px;
+    background-image: url("./images/books.jpg")
 }
 
 @media screen and (max-width: 600px) {
@@ -79,6 +79,7 @@ legend {
     font-size: x-large;
     text-wrap: nowrap;
 }
+
 img {
     padding: 10px;
     width: 100px;
