@@ -51,11 +51,11 @@
         <div class="right-side">
             <div class="fields">
                
-                <fieldset>
+                <fieldset onsubmit="onformSubmit()">
                     <legend>Add New Book</legend>
                     <br>
                     <label for="Name">Name</label><br />
-                    <input id="Name" name="title" type="text" required />
+                    <input id="name" name="title" type="text" required />
 
                     <br>
                     <label for="author">Author</label><br />
@@ -66,8 +66,8 @@
                     <input id="price" name="price" type="number" required />
 
                     <br>
-                    <label for="amount">Amount</label><br />
-                    <input id="amount" name="amount" type="number" required /><br>
+                    <label for="amount">Quanitity</label><br />
+                    <input id="quantity" name="quantity" type="number" required /><br>
 
                     <label><br>
                         <select id="in stock" name="in stock">
@@ -78,11 +78,13 @@
                     </label>
                 </fieldset>
                 <br>
+                <div class="formActionButton">
                 <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
+                <button type="reset">Reset</button></div>
             </div>
         </div>
     </div>
+    <hr>
 
 </body>
 
